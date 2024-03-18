@@ -12,6 +12,20 @@ code {
     monospace;
 }
 
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.dark-mode {
+	background-color: black;
+}
+
+.dark-mode h1 {
+	color: white;
+}
+
 /* this keeps the App component in the center of the page */
 .container {
 	max-width: 960px;
@@ -78,4 +92,28 @@ textarea:focus {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.delete-icon {
+	cursor: pointer;
+}
+
+/* for the search component */
+.search {
+	display: flex;
+	align-items: center;
+	background-color: rgb(233, 233, 233);
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 1.5em;
+}
+
+.search input {
+	border: none;
+	background-color: rgb(233, 233, 233);
+	width: 100%;
+}
+
+.search input:focus {
+	outline: none;
 }
